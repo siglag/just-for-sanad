@@ -1,21 +1,19 @@
 {
-  "name": "just-for-sanad",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "with-vite",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "keywords": [],
-  "author": "Siglag",
-  "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "12.16.1",
-      "onFail": "download"
-    }
+  "devDependencies": {
+    "eslint": "10.9.1",
+    "prettier": "3.9.6",
+    "turbo": "^2.11.10"
   },
-  "packageManager": "pnpm@12.16.1",
-  "type": "module"
+  "engines": {
+    "node": ">=24.20.0"
+  },
+  "packageManager": "pnpm@11.24.0"
 }
