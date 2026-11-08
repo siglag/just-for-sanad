@@ -7,7 +7,6 @@ import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
 import tailwindcss from '@tailwindcss/vite'
-import { nitro } from 'nitro/vite'
 import contentCollections from '@content-collections/vite'
 
 const config = defineConfig({
@@ -19,7 +18,6 @@ const config = defineConfig({
       outdir: './src/paraglide',
       strategy: ['url', 'baseLocale'],
     }),
-    nitro(),
     contentCollections(),
     tailwindcss(),
     tanstackStart(),
